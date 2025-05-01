@@ -14,10 +14,10 @@ public class Rockpapersis{
     int user1point=0;
     int user2point=0;
     while( user1point !=win && user2point !=win){
-        System.out.println(" Enter the choice (rock/paper/siser) -User1 :");
+        System.out.println(" Enter the choice (rock/paper/Scissor) -User1 :");
         String user1=s.nextLine().toLowerCase();
     
-        System.out.println(" Enter the choice (rock/paper/siser) -User2 :");
+        System.out.println(" Enter the choice (rock/paper/Scissor) -User2 :");
         String user2=s.nextLine().toLowerCase();
         if(user1.equals(user2)){
             System.out.println(".....tie no point!.....");
@@ -27,7 +27,7 @@ public class Rockpapersis{
                 user2point++;
                 System.out.println("User 2 - Got a point \n user1 point : "+user1point+" \n user1 point : "+user2point);
             }
-            else if(user2.equals("siser")){
+            else if(user2.equals("Scissor")){
                 user1point++;
                 System.out.println("User 1 - Got a point \n user1 point : "+user1point+" \n user2 point : "+user2point);
             }
@@ -36,7 +36,7 @@ public class Rockpapersis{
             }
         }
         else if(user1.equals("paper")){
-            if(user2.equals("siser")){
+            if(user2.equals("Scissor")){
                 user2point++;
                 System.out.println("User 2 - Got a point \n user1 point : "+user1point+" \n user1 point : "+user2point);
             }
@@ -48,7 +48,7 @@ public class Rockpapersis{
                 System.out.println("......Conform with your user 2 -spelling!........");
             }
         }
-        else if(user1.equals("siser")){
+        else if(user1.equals("Scissor")){
             if(user2.equals("rock")){
                 user2point++;
                 System.out.println("User 2 - Got a point \n user1 point : "+user1point+" \n user1 point : "+user2point);
@@ -87,9 +87,9 @@ public class Rockpapersis{
     int user1point=0;
     int user2point=0;
     while( user1point !=win && user2point !=win){
-        System.out.println(" Enter the choice (rock/paper/siser) -User1 :");
+        System.out.println(" Enter the choice (rock/paper/Scissor) -User1 :");
         String user1=s.nextLine().toLowerCase();
-        String computer[]={"rock","paper","siser"};
+        String computer[]={"rock","paper","Scissor"};
         Random random=new Random();
         int randindex=random.nextInt(computer.length);
         String user2=computer[randindex].toLowerCase();
@@ -101,7 +101,7 @@ public class Rockpapersis{
                 user2point++;
                 System.out.println("User 2 - Got a point \n user1 point : "+user1point+" \n user1 point : "+user2point);
             }
-            else if(user2.equals("siser")){
+            else if(user2.equals("Scissor")){
                 user1point++;
                 System.out.println("User 1 - Got a point \n user1 point : "+user1point+" \n user2 point : "+user2point);
             }
@@ -110,7 +110,7 @@ public class Rockpapersis{
             }
         }
         else if(user1.equals("paper")){
-            if(user2.equals("siser")){
+            if(user2.equals("Scissor")){
                 user2point++;
                 System.out.println("User 2 - Got a point \n user1 point : "+user1point+" \n user1 point : "+user2point);
             }
@@ -122,7 +122,7 @@ public class Rockpapersis{
                 System.out.println("......Conform with your user 2 -spelling!........");
             }
         }
-        else if(user1.equals("siser")){
+        else if(user1.equals("Scissor")){
             if(user2.equals("rock")){
                 user2point++;
                 System.out.println("User 2 - Got a point \n user1 point : "+user1point+" \n user1 point : "+user2point);
